@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'calculator'
+            keyPassword '154312'
+            storeFile file('D:/Android/key/calculate.jks')
+            storePassword '154312'
+        }
+    }
+    compileSdkVersion 18
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.example.calculator"
+        minSdkVersion 18
+        targetSdkVersion 18
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+}

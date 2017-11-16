@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/RelativeLayout01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:id="@+id/label" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent" 
+		android:text="用户名：">
+	</TextView>
+	<EditText android:id="@+id/entry" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent" 
+		android:layout_below="@id/label">
+	</EditText>
+	<Button android:id="@+id/cancel" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:layout_alignParentRight="true" 
+		android:layout_marginLeft="10dip" 
+		android:layout_below="@id/entry" 
+		android:text="取消" >
+	</Button>
+		<Button android:id="@+id/ok" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:layout_toLeftOf="@id/cancel" 
+		android:layout_alignTop="@id/cancel"
+		android:text="确认">
+	</Button>
+
+		<Button
+		    android:id="@+id/one"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ok"
+		    android:layout_marginLeft="50dp"
+		    android:layout_marginTop="32dp"
+		    android:text="1" />
+
+		<Button
+		    android:id="@+id/two"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@+id/one"
+		    android:layout_alignBottom="@+id/one"
+		    android:layout_alignLeft="@+id/ok"
+		    android:text="2" />
+
+		<Button
+		    android:id="@+id/three"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignRight="@+id/one"
+		    android:layout_below="@+id/one"
+		    android:layout_marginTop="56dp"
+		    android:text="3" />
+
+		<Button
+		    android:id="@+id/four"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@+id/three"
+		    android:layout_alignLeft="@+id/two"
+		    android:text="4" />
+
+</RelativeLayout>
